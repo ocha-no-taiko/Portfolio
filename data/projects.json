@@ -1,0 +1,28 @@
+[
+  {
+    "id": "vibe-patching",
+    "title": "†Vibe-Patching†",
+    "year": "2024–",
+    "type": "System / Research",
+    "status": "Ongoing",
+    "role": "Concept / Development",
+    "cover": "",
+    "description": "知能システム工学を用いた音楽表現の研究・システム開発プロジェクト。\nここに概要・目的・現在の進捗などを記載してください。",
+    "tags": ["Algorithmic Composition", "Max", "Research"],
+    "links": [
+      { "label": "Repository", "url": "https://github.com/ocha-no-taiko" }
+    ]
+  },
+  {
+    "id": "iamas-research",
+    "title": "Algorithmic Composition Research",
+    "year": "2026–",
+    "type": "Research",
+    "status": "Ongoing",
+    "role": "IAMAS",
+    "cover": "",
+    "description": "情報科学芸術大学院大学（IAMAS）における、現代音楽／アルゴリズミック・コンポジションの研究。\nこの項目はサンプルです。data/projects.json を編集してください。",
+    "tags": ["Contemporary Music", "Intelligent Systems"],
+    "links": []
+  }
+]

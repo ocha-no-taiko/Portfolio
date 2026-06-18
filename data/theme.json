@@ -1,0 +1,39 @@
+{
+  "_comment": "サイトのフォントと配色をここで一元管理します。site.js が読み込み、CSS変数として適用します。色は light（通常）と dark（OSがダークモードのとき）。",
+  "colors": {
+    "light": {
+      "--bg": "#FFFFFF",
+      "--bg-elev": "#faf8fc",
+      "--fg": "#191320",
+      "--fg-muted": "#6f6878",
+      "--line": "#ece8f1",
+      "--line-strong": "#d6cee2",
+      "--accent": "#3b0e4b",
+      "--on-accent": "#ffffff"
+    },
+    "dark": {
+      "--bg": "#0f0a13",
+      "--bg-elev": "#171020",
+      "--fg": "#efe9f4",
+      "--fg-muted": "#a298ad",
+      "--line": "#271f30",
+      "--line-strong": "#3b3047",
+      "--accent": "#c79ee0",
+      "--on-accent": "#1a0f22"
+    }
+  },
+  "fonts": {
+    "serif": "\"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", \"Yu Mincho\", serif",
+    "sans": "\"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", serif",
+    "faces": [
+      {
+        "family": "GenEi Chikugo Min",
+        "src": "assets/fonts/GenEiChikugoMin3-R.woff2",
+        "format": "woff2",
+        "weight": "100 900",
+        "style": "normal",
+        "display": "swap"
+      }
+    ]
+  }
+}

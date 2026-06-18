@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Tusq</title>
+  <meta name="description" content="Tusq の進行中のプロジェクト / Project." />
+
+  <meta property="og:title" content="Project — Tusq" />
+  <meta property="og:description" content="Projects by Tusq" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/ogp.png" />
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/site.js"></script>
+  <script defer src="assets/js/collection.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+  <noscript><nav class="wrap" style="padding-block:16px"><a href="index.html">Home</a> · <a href="biography.html">Biography</a> · <a href="opus.html">Opus</a> · <a href="contact.html">Contact</a></nav><p class="wrap">プロジェクトの表示には JavaScript が必要です。</p></noscript>
+
+  <main>
+    <section class="section wrap">
+      <p class="eyebrow reveal">Project</p>
+      <h1 class="page-title reveal">プロジェクト</h1>
+      <p class="lead reveal">進行中の制作・研究・システム開発。</p>
+
+      <div class="collection" data-src="data/projects.json" data-kind="project"
+           data-empty="まだプロジェクトがありません。" style="margin-top:clamp(40px,6vw,64px)"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- shared modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="詳細">
+    <div class="modal__backdrop"></div>
+    <div class="modal__panel">
+      <button class="modal__close" aria-label="閉じる">×</button>
+      <div class="modal__body"></div>
+    </div>
+  </div>
+</body>
+</html>

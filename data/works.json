@@ -1,0 +1,34 @@
+[
+  {
+    "id": "sample-ep",
+    "title": "Sample EP",
+    "year": "2025",
+    "type": "EP / Composition",
+    "cover": "",
+    "description": "ここに作品の説明（キャプション）が入ります。\nこの項目はサンプルです。data/works.json を編集して、あなたの作品に差し替えてください。",
+    "tags": ["Composition", "Electronic"],
+    "embed": {
+      "type": "soundcloud",
+      "url": "https://soundcloud.com/your-account/your-track"
+    },
+    "links": [
+      { "label": "SoundCloud", "url": "https://soundcloud.com/" }
+    ]
+  },
+  {
+    "id": "sample-mv",
+    "title": "Sample Music Video",
+    "year": "2024",
+    "type": "Single / Music Video",
+    "cover": "",
+    "description": "映像作品のサンプルです。embed に YouTube の URL を入れると、詳細でプレイヤーが表示されます。",
+    "tags": ["Arrangement", "Music Video"],
+    "embed": {
+      "type": "youtube",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "links": [
+      { "label": "YouTube", "url": "https://www.youtube.com/" }
+    ]
+  }
+]
