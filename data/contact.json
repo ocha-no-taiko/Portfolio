@@ -1,0 +1,12 @@
+{
+  "_comment": "Contactページのリンク集。不要な行は削除、追加はlinksに項目を足すだけ。url は mailto: でもOK。",
+  "intro": "楽曲提供・出演・共同制作などのご依頼は、以下からお気軽にどうぞ。",
+  "links": [
+    { "label": "Email", "value": "ocha.no.taiko@gmail.com", "url": "mailto:ocha.no.taiko@gmail.com" },
+    { "label": "X (Twitter)", "value": "@your_handle", "url": "https://x.com/" },
+    { "label": "Instagram", "value": "@your_handle", "url": "https://www.instagram.com/" },
+    { "label": "SoundCloud", "value": "soundcloud.com/…", "url": "https://soundcloud.com/" },
+    { "label": "YouTube", "value": "youtube.com/…", "url": "https://www.youtube.com/" },
+    { "label": "GitHub", "value": "github.com/ocha-no-taiko", "url": "https://github.com/ocha-no-taiko" }
+  ]
+}

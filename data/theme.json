@@ -23,8 +23,13 @@
     }
   },
   "fonts": {
-    "serif": "\"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", \"Yu Mincho\", serif",
+    "_note": "serif=見出し/タイトル, label=ナビ等の小さなラベル, sans=本文。欧文はFutura(端末にあれば)→Jost(無料代替)、日本語は源暎ちくご明朝に自動で落ちます。",
+    "serif": "Futura, \"Jost\", \"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", serif",
+    "label": "Futura, \"Jost\", \"GenEi Chikugo Min\", \"Noto Serif JP\", sans-serif",
     "sans": "\"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", serif",
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"
+    ],
     "faces": [
       {
         "family": "GenEi Chikugo Min",

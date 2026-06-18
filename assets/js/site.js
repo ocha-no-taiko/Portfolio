@@ -21,6 +21,17 @@ const SITE = {
    Single source of truth for typography and palette.
    Edit data/theme.json — no need to touch CSS. */
 
+function injectFontImports(urls) {
+  if (!Array.isArray(urls)) return;
+  urls.forEach((href) => {
+    if (!href || document.querySelector(`link[href="${href}"]`)) return;
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = href;
+    document.head.appendChild(link);
+  });
+}
+
 function injectFontFaces(faces) {
   if (!Array.isArray(faces) || !faces.length) return;
   const css = faces
@@ -58,10 +69,12 @@ async function applyTheme() {
     if (!res.ok) return;
     const theme = await res.json();
     if (theme.fonts) {
+      injectFontImports(theme.fonts.imports);
       injectFontFaces(theme.fonts.faces);
       const root = document.documentElement;
       if (theme.fonts.serif) root.style.setProperty("--serif", theme.fonts.serif);
       if (theme.fonts.sans) root.style.setProperty("--sans", theme.fonts.sans);
+      if (theme.fonts.label) root.style.setProperty("--label", theme.fonts.label);
     }
     applyColors(theme.colors);
   } catch (err) {

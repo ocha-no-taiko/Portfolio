@@ -7,10 +7,10 @@
 | ページ | ファイル | 内容 | 管理方法 |
 | --- | --- | --- | --- |
 | Home | `index.html` | トップ（ヒーロー） | HTML 直接 |
-| Biography | `biography.html` | 自己紹介・プロフィール | HTML 直接 |
+| Biography | `biography.html` | 自己紹介・基本情報・来歴（年表） | **`data/biography.json`** |
 | Opus | `opus.html` | 作品集 | **`data/works.json`** |
 | Project | `project.html` | 進行中のプロジェクト | **`data/projects.json`** |
-| Contact | `contact.html` | 連絡先リンク集 | HTML 直接 |
+| Contact | `contact.html` | 連絡先リンク集 | **`data/contact.json`** |
 
 ## ディレクトリ
 
@@ -75,6 +75,18 @@ portfolio/
 | `spotify` | Spotify の URL |
 | `iframe` | 任意の埋め込み URL |
 
+## Biography を編集する（`data/biography.json`）
+
+- `intro` … 紹介文の段落（配列）。
+- `facts` … 基本情報 `{label, value}` の配列。
+- `timeline` … 来歴（年表）。`{year, title, detail}` を新しい順／古い順お好みで並べる。`detail` は空 `""` でも可。
+- `name` / `reading` … 見出しの名前と読み。`portrait` … 顔写真のパス。
+
+## Contact を編集する（`data/contact.json`）
+
+- `intro` … 冒頭の一文。
+- `links` … `{label, value, url}` の配列。`url` が `mailto:` 以外なら自動で別タブ＋「↗」が付きます。不要な行は削除、追加は項目を足すだけ。
+
 ## Project を追加する
 
 `data/projects.json` も形式は同じです。加えて以下が使えます。
@@ -109,8 +121,10 @@ python3 -m http.server 8000
     "dark":  { "--bg": "#0f0a13", "--accent": "#c79ee0", "...": "..." }
   },
   "fonts": {
-    "serif": "\"GenEi Chikugo Min\", \"Noto Serif JP\", serif",
+    "serif": "Futura, \"Jost\", \"GenEi Chikugo Min\", serif",
+    "label": "Futura, \"Jost\", \"GenEi Chikugo Min\", sans-serif",
     "sans":  "\"GenEi Chikugo Min\", \"Noto Serif JP\", serif",
+    "imports": ["https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"],
     "faces": [
       { "family": "GenEi Chikugo Min", "src": "assets/fonts/GenEiChikugoMin3-R.woff2", "format": "woff2", "weight": "100 900" }
     ]
@@ -120,12 +134,13 @@ python3 -m http.server 8000
 
 - `colors.light` … 通常時。`colors.dark` … OS がダークモードのとき自動適用。
 - 主要色：`--bg`（背景）/ `--fg`（文字）/ `--accent`（アクセント, リンク下線・ボタン等）/ `--line`（罫線）。
-- `fonts.serif` … 見出し、`fonts.sans` … 本文。`fonts.faces` … 読み込む Web フォント（`assets/fonts/` に置いて指定）。
-- 現在のフォントは **源暎ちくご明朝**（御琥祢屋, SIL OFL 1.1）。woff2 約 4.3MB。`assets/fonts/OFL.txt` にライセンスを同梱しています（再配布時も必須）。別フォントに変えるときは `assets/fonts/` に woff2 を置き、`faces` と `serif`/`sans` を書き換えるだけ。
+- フォントの役割：`serif` … 見出し・タイトル、`label` … ナビやラベル等の小さな欧文、`sans` … 本文。
+- **欧文は Futura → Jost、和文は源暎ちくご明朝** に自動で切り替わります。Futura は有償フォントで Web 配布できないため、Futura を持つ端末では本物の Futura を、持たない場合は無料の Futura 系 **Jost**（Google Fonts）を表示します。日本語は Futura/Jost に字が無いため自動的に源暎ちくご明朝に落ちます。
+- `imports` … 外部の Web フォント CSS（Jost / Noto Serif JP のフォールバック）。`faces` … 自前ホストの Web フォント（`assets/fonts/`）。
+- 源暎ちくご明朝（御琥祢屋, SIL OFL 1.1）は woff2 約 4.3MB。`assets/fonts/OFL.txt` にライセンスを同梱（再配布時も必須）。
 
 ## その他のカスタマイズ
 
 - **ナビ項目 / サイト名**：`assets/js/site.js` の `NAV` と `SITE`。
-- **連絡先**：`contact.html` のリスト。
 - **favicon / ogp**：`assets/img/` の画像を差し替え。
 - CSS の `:root` はテーマ未読み込み時のフォールバック値です。

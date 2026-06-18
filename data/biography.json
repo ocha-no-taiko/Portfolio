@@ -1,0 +1,28 @@
+{
+  "_comment": "Biographyページの内容。intro=紹介文の段落配列、facts=基本情報、timeline=来歴（年表）。timelineの年は生年(2003)＋年齢から仮置きしています。誕生月により前後するので適宜修正してください。",
+  "name": "Tusq",
+  "reading": "輔",
+  "role": "Composer / Instrumentalist",
+  "portrait": "assets/img/Tusq_Selfy1.jpg",
+  "intro": [
+    "2003年生まれ。",
+    "5歳からRCC Drum Schoolでジャズドラムを専攻し、14歳から作編曲、17歳からDJを独学する。",
+    "18歳からTusq名義で、ドラム・作編曲・DJなどの音楽活動を開始。その他、イベントの企画運営・技術監修やVTuberへの楽曲提供なども行う。",
+    "2026年現在は、情報科学芸術大学院大学（IAMAS）で現代音楽（アルゴリズミック・コンポジション）を専攻。主に知能システム工学を用いた音楽表現を研究しており、「†Vibe-Patching†」をはじめとしたシステム開発を行う。"
+  ],
+  "facts": [
+    { "label": "Name", "value": "Tusq（輔）" },
+    { "label": "Born", "value": "2003" },
+    { "label": "Role", "value": "Composer / Instrumentalist / DJ" },
+    { "label": "Based", "value": "IAMAS — 情報科学芸術大学院大学" },
+    { "label": "Field", "value": "Algorithmic Composition / 知能システム工学" }
+  ],
+  "timeline": [
+    { "year": "2003", "title": "誕生", "detail": "" },
+    { "year": "2008", "title": "RCC Drum School でジャズドラムを始める", "detail": "5歳" },
+    { "year": "2017", "title": "作編曲を独学で始める", "detail": "14歳" },
+    { "year": "2020", "title": "DJ を独学で始める", "detail": "17歳" },
+    { "year": "2021", "title": "Tusq 名義で音楽活動を開始", "detail": "ドラム・作編曲・DJ／イベント企画運営・技術監修／VTuberへの楽曲提供など" },
+    { "year": "2026", "title": "IAMAS（情報科学芸術大学院大学）入学", "detail": "現代音楽（アルゴリズミック・コンポジション）を専攻。「†Vibe-Patching†」をはじめとしたシステム開発を行う" }
+  ]
+}
