@@ -110,6 +110,38 @@ python3 -m http.server 8000
 2. リポジトリ Settings → Pages → Source を `main` ブランチのルートに設定。
 3. 数分後に `https://<ユーザー名>.github.io/<リポジトリ名>/` で公開されます。
 
+## 内容を更新して GitHub に反映する
+
+JSON（`data/*.json`）や画像を編集したら、GitHub に push すると公開サイトへ自動反映されます（反映まで数十秒〜1分）。方法は2通り。
+
+### 方法A：ターミナル（手元のリポジトリで編集する場合）
+
+1. `data/works.json` などを編集、画像は `assets/img/opus/` 等に追加。
+2. ローカルで確認（任意）：`python3 -m http.server 8000` → http://localhost:8000
+3. 反映：
+
+```bash
+git add -A
+git commit -m "Add new work"   # メッセージは自由
+git push
+```
+
+> 初回だけリポジトリの取得が必要です：`git clone https://github.com/ocha-no-taiko/Portfolio.git`
+> 2回目以降は、push する前に他端末の変更を取り込むため `git pull` してから編集すると安全です。
+
+### 方法B：ブラウザだけ（GitHub のサイト上で直接編集）
+
+手元に環境が無くても、GitHub の Web 画面だけで更新できます。文章やリンクの修正に便利です。
+
+1. https://github.com/ocha-no-taiko/Portfolio を開く。
+2. 編集したいファイル（例 `data/works.json`）を開き、右上の **鉛筆アイコン（Edit this file）** をクリック。
+3. 内容を書き換える。
+4. 下部の **Commit changes** ボタンを押す（コミットメッセージは空でも可）。
+5. 自動で反映されます。
+   - 画像を追加する場合：`assets/img/opus/` フォルダを開き → **Add file → Upload files** で画像をアップロードしてから、`works.json` の `cover` にそのパスを書く。
+
+> JSON はカンマ抜け・閉じ括弧忘れなどがあると表示が崩れます。心配なときは https://jsonlint.com などで貼り付けチェックすると安心です。
+
 ## フォント・配色（テーマ）
 
 フォントと色は **`data/theme.json`** で一元管理します（CSS を触る必要はありません）。`assets/js/site.js` が読み込み、CSS変数として適用します。
