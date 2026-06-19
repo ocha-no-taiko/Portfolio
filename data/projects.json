@@ -1,28 +1,58 @@
 [
   {
-    "id": "vibe-patching",
+    "id": "vp",
     "title": "†Vibe-Patching†",
-    "year": "2024–",
-    "type": "System / Research",
+    "year": "2026–",
+    "type": "Development / Research",
     "status": "Ongoing",
-    "role": "Concept / Development",
+    "role": "Main",
     "cover": "",
     "description": "知能システム工学を用いた音楽表現の研究・システム開発プロジェクト。\nここに概要・目的・現在の進捗などを記載してください。",
-    "tags": ["Algorithmic Composition", "Max", "Research"],
+    "tags": ["Algorithmic Composition"],
     "links": [
-      { "label": "Repository", "url": "https://github.com/ocha-no-taiko" }
+      { "label": "Repository", "url": "https://github.com/ocha-no-taiko/Vibe-Patching" }
     ]
   },
   {
-    "id": "iamas-research",
-    "title": "Algorithmic Composition Research",
+    "id": "sfpj",
+    "title": "SF的想像力と芸術表現",
     "year": "2026–",
     "type": "Research",
     "status": "Ongoing",
-    "role": "IAMAS",
-    "cover": "",
-    "description": "情報科学芸術大学院大学（IAMAS）における、現代音楽／アルゴリズミック・コンポジションの研究。\nこの項目はサンプルです。data/projects.json を編集してください。",
-    "tags": ["Contemporary Music", "Intelligent Systems"],
-    "links": []
+    "role": "master member",
+    "cover": "assets/img/project/sf2026.jpg",
+    "description": "IAMASで参加している研究プロジェクト。\nテクノロジーが作り出す魔術的リアリティを批判的に解体し、オルタナティブな未来の物語を具体的に構想・提示する。",
+    "tags": ["Sci-Fi"],
+    "links": [
+      { "label": "Project", "url": "https://www.iamas.ac.jp/master_projects/sci-fi-imagination_and_artistic_expression/" }
+    ]
+  },
+  {
+    "id": "booth",
+    "title": "booth:",
+    "year": "2025–",
+    "type": "Event",
+    "status": "Ongoing",
+    "role": "Producer",
+    "cover": "assets/img/project/booth_minus1_flayer.jpeg",
+    "description": "POCOMONYが企画・運営するクラブイベント。\nDJパフォーマンスを中心に、茨城県の音楽シーンを発展させることを目的とする。",
+    "tags": ["Club"],
+    "links": [
+      { "label": "X(Twitter)", "url": "https://x.com/booth_blank" }
+    ]
+  },
+  {
+    "id": "nitic1",
+    "title": "Iceflare Nocturne",
+    "year": "2025",
+    "type": "IGA",
+    "status": "DONE",
+    "role": "Sound Art",
+    "cover": "assets/img/project/nitic1.png",
+    "description": "茨城高専と水戸生涯学習センターとの共同プロジェクト。\nHitch Worksとして、サウンドアート・演出監修を行った。",
+    "tags": ["IGA"],
+    "links": [
+      { "label": "Archive", "url": "https://www.ibaraki-ct.ac.jp/info/archives/77670" }
+    ]
   }
 ]
