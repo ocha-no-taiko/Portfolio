@@ -117,14 +117,22 @@ python3 -m http.server 8000
 ```json
 {
   "colors": {
-    "light": { "--bg": "#FFFFFF", "--accent": "#3b0e4b", "...": "..." },
-    "dark":  { "--bg": "#0f0a13", "--accent": "#c79ee0", "...": "..." }
+    "light": { "--bg": "#FFFFFF", "--fg": "#080000", "...": "..." },
+    "dark":  { "--bg": "#080000", "--fg": "#FFFFFF", "...": "..." }
+  },
+  "accents": {
+    "default": "red",
+    "options": [
+      { "id": "red", "label": "赤", "value": "#E24215", "on": "#FFFFFF" },
+      { "id": "orange", "label": "橙", "value": "#EA930A", "on": "#080000" }
+    ]
   },
   "fonts": {
-    "serif": "Futura, \"Jost\", \"GenEi Chikugo Min\", serif",
-    "label": "Futura, \"Jost\", \"GenEi Chikugo Min\", sans-serif",
-    "sans":  "\"GenEi Chikugo Min\", \"Noto Serif JP\", serif",
-    "imports": ["https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"],
+    "serif":  "Futura, \"Jost\", \"GenEi Chikugo Min\", serif",
+    "label":  "Futura, \"Jost\", \"GenEi Chikugo Min\", sans-serif",
+    "sans":   "\"GenEi Chikugo Min\", \"Noto Serif JP\", serif",
+    "script": "\"Smooch\", cursive",
+    "imports": ["https://fonts.googleapis.com/css2?family=Smooch&family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"],
     "faces": [
       { "family": "GenEi Chikugo Min", "src": "assets/fonts/GenEiChikugoMin3-R.woff2", "format": "woff2", "weight": "100 900" }
     ]
@@ -132,12 +140,13 @@ python3 -m http.server 8000
 }
 ```
 
-- `colors.light` … 通常時。`colors.dark` … OS がダークモードのとき自動適用。
-- 主要色：`--bg`（背景）/ `--fg`（文字）/ `--accent`（アクセント, リンク下線・ボタン等）/ `--line`（罫線）。
-- フォントの役割：`serif` … 見出し・タイトル、`label` … ナビやラベル等の小さな欧文、`sans` … 本文。
-- **欧文は Futura → Jost、和文は源暎ちくご明朝** に自動で切り替わります。Futura は有償フォントで Web 配布できないため、Futura を持つ端末では本物の Futura を、持たない場合は無料の Futura 系 **Jost**（Google Fonts）を表示します。日本語は Futura/Jost に字が無いため自動的に源暎ちくご明朝に落ちます。
-- `imports` … 外部の Web フォント CSS（Jost / Noto Serif JP のフォールバック）。`faces` … 自前ホストの Web フォント（`assets/fonts/`）。
-- 源暎ちくご明朝（御琥祢屋, SIL OFL 1.1）は woff2 約 4.3MB。`assets/fonts/OFL.txt` にライセンスを同梱（再配布時も必須）。
+- `colors.light` … 通常時（背景 #FFFFFF / 文字 #080000）。`colors.dark` … OS がダークモードのとき自動適用（背景 #080000 / 文字 #FFFFFF）。
+- 主要色：`--bg`（背景）/ `--fg`（文字）/ `--line`（罫線）。アクセントは下記 `accents` で別管理。
+- **アクセントカラーは訪問者が選べます**（フッターのカラー丸）。`accents.options` に候補 `{id, label, value, on}` を並べ、`accents.default` で初期色を指定。`on` はそのアクセント上に乗る文字色（橙・黄など明るい色は黒推奨）。選択は各ブラウザの localStorage に保存され、ページ間で維持されます。
+- フォントの役割：`serif` … 見出し・タイトル、`label` … ナビやラベル等の小さな欧文、`sans` … 本文、`script` … 「Tusq」専用（Smooch）。
+- **欧文は Futura → Jost、和文は源暎ちくご明朝** に自動で切り替わります。Futura は有償でWeb配布できないため、Futura を持つ端末では本物の Futura を、無い場合は無料の Futura 系 **Jost**（Google Fonts）を表示。日本語は自動的に源暎ちくご明朝に落ちます。
+- 「Tusq」の表示書体は **Smooch**（Google Fonts）。Home のヒーローと Biography タイトルにのみ適用（`.font-script`）。
+- `imports` … 外部 Web フォント CSS（Smooch / Jost / Noto Serif JP）。`faces` … 自前ホストのフォント。源暎ちくご明朝（御琥祢屋, SIL OFL 1.1, woff2 約 4.3MB）は `assets/fonts/OFL.txt` にライセンスを同梱（再配布時も必須）。
 
 ## その他のカスタマイズ
 

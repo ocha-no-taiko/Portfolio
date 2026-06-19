@@ -63,20 +63,67 @@ function applyColors(colors) {
   mq.addEventListener?.("change", paint);
 }
 
+/* ----- accent (user-selectable, persisted in localStorage) ----- */
+let THEME = null;
+const ACCENT_KEY = "tusq-accent";
+
+function accentOptions() {
+  return THEME?.accents?.options || [];
+}
+function savedAccentId() {
+  let saved = null;
+  try { saved = localStorage.getItem(ACCENT_KEY); } catch (e) {}
+  const opts = accentOptions();
+  if (saved && opts.some((o) => o.id === saved)) return saved;
+  return THEME?.accents?.default || opts[0]?.id;
+}
+function applyAccent(id) {
+  const opts = accentOptions();
+  const opt = opts.find((o) => o.id === id) || opts[0];
+  if (!opt) return;
+  const root = document.documentElement;
+  root.style.setProperty("--accent", opt.value);
+  root.style.setProperty("--on-accent", opt.on || "#fff");
+  try { localStorage.setItem(ACCENT_KEY, opt.id); } catch (e) {}
+  document.querySelectorAll(".swatch").forEach((s) =>
+    s.setAttribute("aria-pressed", String(s.dataset.id === opt.id))
+  );
+}
+function renderAccentPicker() {
+  const host = document.getElementById("accent-picker");
+  if (!host || !accentOptions().length) return;
+  const current = savedAccentId();
+  host.innerHTML =
+    `<span class="accent-picker__label">Accent</span>` +
+    accentOptions()
+      .map(
+        (o) =>
+          `<button type="button" class="swatch" data-id="${o.id}" title="${o.label}" aria-label="アクセントカラー: ${o.label}" aria-pressed="${o.id === current}" style="background:${o.value}"></button>`
+      )
+      .join("");
+  host.addEventListener("click", (e) => {
+    const btn = e.target.closest(".swatch");
+    if (btn) applyAccent(btn.dataset.id);
+  });
+}
+
 async function applyTheme() {
   try {
     const res = await fetch("data/theme.json", { cache: "no-cache" });
     if (!res.ok) return;
-    const theme = await res.json();
-    if (theme.fonts) {
-      injectFontImports(theme.fonts.imports);
-      injectFontFaces(theme.fonts.faces);
+    THEME = await res.json();
+    if (THEME.fonts) {
+      injectFontImports(THEME.fonts.imports);
+      injectFontFaces(THEME.fonts.faces);
       const root = document.documentElement;
-      if (theme.fonts.serif) root.style.setProperty("--serif", theme.fonts.serif);
-      if (theme.fonts.sans) root.style.setProperty("--sans", theme.fonts.sans);
-      if (theme.fonts.label) root.style.setProperty("--label", theme.fonts.label);
+      if (THEME.fonts.serif) root.style.setProperty("--serif", THEME.fonts.serif);
+      if (THEME.fonts.sans) root.style.setProperty("--sans", THEME.fonts.sans);
+      if (THEME.fonts.label) root.style.setProperty("--label", THEME.fonts.label);
+      if (THEME.fonts.script) root.style.setProperty("--script", THEME.fonts.script);
     }
-    applyColors(theme.colors);
+    applyColors(THEME.colors);
+    applyAccent(savedAccentId());
+    renderAccentPicker();
   } catch (err) {
     console.warn("theme.json not loaded — using CSS defaults.", err);
   }
@@ -114,6 +161,7 @@ function renderFooter() {
   return `
   <div class="wrap site-footer__inner">
     <span>© ${year} ${SITE.name}</span>
+    <div class="accent-picker" id="accent-picker"></div>
     <span>Composer / Instrumentalist</span>
   </div>`;
 }
@@ -139,6 +187,7 @@ function mountChrome() {
   if (footer) {
     footer.className = "site-footer";
     footer.innerHTML = renderFooter();
+    renderAccentPicker();
   }
 }
 

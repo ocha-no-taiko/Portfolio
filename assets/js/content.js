@@ -85,7 +85,7 @@ function renderBiography(el, data) {
 
   el.innerHTML = `
     <p class="eyebrow reveal">Biography</p>
-    <h1 class="page-title reveal">${esc(data.name || "")}${reading}</h1>
+    <h1 class="page-title reveal"><span class="font-script">${esc(data.name || "")}</span>${reading}</h1>
 
     <div class="bio-grid" style="margin-top:clamp(40px,7vw,72px)">
       ${portrait}

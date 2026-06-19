@@ -1,34 +1,43 @@
 {
-  "_comment": "サイトのフォントと配色をここで一元管理します。site.js が読み込み、CSS変数として適用します。色は light（通常）と dark（OSがダークモードのとき）。",
+  "_comment": "サイトのフォント・配色・アクセント候補をここで一元管理します。site.js が読み込み CSS変数として適用。colors は light/dark、accents はユーザーが切り替えられる候補。",
   "colors": {
     "light": {
       "--bg": "#FFFFFF",
-      "--bg-elev": "#faf8fc",
-      "--fg": "#191320",
-      "--fg-muted": "#6f6878",
-      "--line": "#ece8f1",
-      "--line-strong": "#d6cee2",
-      "--accent": "#3b0e4b",
-      "--on-accent": "#ffffff"
+      "--bg-elev": "#fafafa",
+      "--fg": "#080000",
+      "--fg-muted": "#6b6b6b",
+      "--line": "#e9e8e8",
+      "--line-strong": "#cfcdcd"
     },
     "dark": {
-      "--bg": "#0f0a13",
-      "--bg-elev": "#171020",
-      "--fg": "#efe9f4",
-      "--fg-muted": "#a298ad",
-      "--line": "#271f30",
-      "--line-strong": "#3b3047",
-      "--accent": "#c79ee0",
-      "--on-accent": "#1a0f22"
+      "--bg": "#080000",
+      "--bg-elev": "#151011",
+      "--fg": "#FFFFFF",
+      "--fg-muted": "#9c9696",
+      "--line": "#241f20",
+      "--line-strong": "#3a3334"
     }
   },
+  "accents": {
+    "default": "red",
+    "options": [
+      { "id": "red",    "label": "赤", "value": "#E24215", "on": "#FFFFFF" },
+      { "id": "orange", "label": "橙", "value": "#EA930A", "on": "#080000" },
+      { "id": "yellow", "label": "黄", "value": "#F8B400", "on": "#080000" },
+      { "id": "green",  "label": "緑", "value": "#006428", "on": "#FFFFFF" },
+      { "id": "blue",   "label": "青", "value": "#0086AD", "on": "#FFFFFF" },
+      { "id": "indigo", "label": "藍", "value": "#003775", "on": "#FFFFFF" },
+      { "id": "purple", "label": "紫", "value": "#3b0e4b", "on": "#FFFFFF" }
+    ]
+  },
   "fonts": {
-    "_note": "serif=見出し/タイトル, label=ナビ等の小さなラベル, sans=本文。欧文はFutura(端末にあれば)→Jost(無料代替)、日本語は源暎ちくご明朝に自動で落ちます。",
+    "_note": "serif=見出し/タイトル, label=ナビ等のラベル, sans=本文, script=「Tusq」専用。欧文はFutura→Jost、和文は源暎ちくご明朝に自動で落ちます。",
     "serif": "Futura, \"Jost\", \"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", serif",
     "label": "Futura, \"Jost\", \"GenEi Chikugo Min\", \"Noto Serif JP\", sans-serif",
     "sans": "\"GenEi Chikugo Min\", \"Noto Serif JP\", \"Hiragino Mincho ProN\", serif",
+    "script": "\"Smooch\", cursive",
     "imports": [
-      "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"
+      "https://fonts.googleapis.com/css2?family=Smooch&family=Jost:wght@400;500;600&family=Noto+Serif+JP:wght@500;600&display=swap"
     ],
     "faces": [
       {
