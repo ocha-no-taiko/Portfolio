@@ -1,0 +1,49 @@
+[
+  {
+    "id": "pocomony",
+    "title": "POCOMONY",
+    "year": "2022–",
+    "type": "Creative Unit",
+    "role": "Member",
+    "cover": "",
+    "description": "（団体の紹介文をここに記載してください）\nクラブイベント「booth:」の企画・運営を行うユニット。",
+    "tags": ["Club", "Event"],
+    "links": [
+      { "label": "X (Twitter)", "url": "https://x.com/booth_blank" }
+    ]
+  },
+  {
+    "id": "cruxwav",
+    "title": "Crux.wav",
+    "year": "2022–",
+    "type": "Unit",
+    "role": "Member",
+    "cover": "",
+    "description": "（団体の紹介文をここに記載してください）",
+    "tags": [],
+    "links": []
+  },
+  {
+    "id": "hitchworks",
+    "title": "Hitch Works",
+    "year": "2025–",
+    "type": "Sound Art Unit",
+    "role": "Member",
+    "cover": "",
+    "description": "サウンドアート・演出を手がけるユニット。「Iceflare Nocturne」などの制作を行う。\n（紹介文を追記してください）",
+    "tags": ["Sound Art"],
+    "links": []
+  },
+  {
+    "id": "gsignpresto",
+    "title": "G sign presto",
+    "year": "2024–2026",
+    "type": "Unit",
+    "role": "Member",
+    "status": "解散",
+    "cover": "",
+    "description": "（団体の紹介文をここに記載してください）2026年に解散。",
+    "tags": [],
+    "links": []
+  }
+]

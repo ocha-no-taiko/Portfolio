@@ -12,7 +12,7 @@
       "url": "https://soundcloud.com/ocha-no-taiko/sets/ran_sho?si=1cf18f8870d14e78a77a93c2b1e673b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/" }
+      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/ran_sho?si=1cf18f8870d14e78a77a93c2b1e673b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
     ]
   },
   {
@@ -28,12 +28,12 @@
       "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/" }
+      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
     ]
   },
   {
     "id": "sound-sid",
-    "title": "Sound「snowed in delta」",
+    "title": "EP「snowed in delta」",
     "year": "2026",
     "type": "EP / Composition",
     "cover": "assets/img/opus/snowed in delta.jpeg",
@@ -41,10 +41,10 @@
     "tags": ["Composition", "Post Fusion"],
     "embed": {
       "type": "soundcloud",
-      "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      "url": "https://soundcloud.com/ocha-no-taiko/sets/snowed-in-delta?si=2b9f2be11b4943e19e51d0a7583bb857&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/" }
+      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/snowed-in-delta?si=2b9f2be11b4943e19e51d0a7583bb857&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
     ]
   },
   {
@@ -60,7 +60,7 @@
       "url": "https://soundcloud.com/ocha-no-taiko/sets/hyper-sonus?si=0a04cfccf74a44d0ade7819dec3597e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/" }
+      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/hyper-sonus?si=0a04cfccf74a44d0ade7819dec3597e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
     ]
   },
   {
@@ -76,7 +76,7 @@
       "url": "https://youtu.be/_weH6RlaY3E?si=WHWM-T4tq5M-Hf7r"
     },
     "links": [
-      { "label": "YouTube", "url": "https://youtube.com/" }
+      { "label": "YouTube", "url": "https://youtu.be/_weH6RlaY3E?si=WHWM-T4tq5M-Hf7r" }
     ]
   },
   {
@@ -92,7 +92,7 @@
       "url":"https://www.youtube.com/watch?v=CJlOBsyjjEA"
     },
     "links": [
-      { "label": "YouTube", "url": "https://youtube.com/" }
+      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=CJlOBsyjjEA" }
     ]
   }
 ]

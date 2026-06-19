@@ -10,6 +10,7 @@
 | Biography | `biography.html` | 自己紹介・基本情報・来歴（年表） | **`data/biography.json`** |
 | Opus | `opus.html` | 作品集 | **`data/works.json`** |
 | Project | `project.html` | 進行中のプロジェクト | **`data/projects.json`** |
+| Organization | `organization.html` | 所属団体・ユニット | **`data/organizations.json`** |
 | Contact | `contact.html` | 連絡先リンク集 | **`data/contact.json`** |
 
 ## ディレクトリ
@@ -93,6 +94,11 @@ portfolio/
 
 - `status`: `"Ongoing"` など。`"Released"` / `"公開"` 以外を入れるとカード左上にバッジ表示。
 - `role`: 役割（例: "Concept / Development"）。
+
+## Organization（所属団体）を追加する
+
+`data/organizations.json` も Opus / Project と同じ形式です（`title` / `year` / `type` / `role` / `cover` / `description` / `tags` / `links` / `status`）。
+ロゴや写真を `assets/img/` に置いて `cover` に指定できます。活動終了した団体は `status` に `"解散"` などを入れるとカードにバッジが付きます。
 
 ## ローカルで確認する
 
