@@ -1,48 +1,90 @@
 [
   {
-    "id": "pocomony",
-    "title": "POCOMONY",
-    "year": "2022–",
-    "type": "Creative Unit",
-    "role": "Member",
-    "cover": "",
-    "description": "（団体の紹介文をここに記載してください）\nクラブイベント「booth:」の企画・運営を行うユニット。",
-    "tags": ["Club", "Event"],
+    "id": "iamas",
+    "title": "情報科学芸術大学院大学 [IAMAS]",
+    "year": "2026–",
+    "type": "Graduate University",
+    "role": "Student",
+    "cover": "assets/img/organization/iamas.png",
+    "description": "岐阜県立の大学院大学。\n全国でも数少ない「メディア表現」を研究している。",
+    "tags": [],
     "links": [
-      { "label": "X (Twitter)", "url": "https://x.com/booth_blank" }
+      { "label": "Official Website", "url": "https://www.iamas.ac.jp/" }
     ]
   },
   {
-    "id": "cruxwav",
-    "title": "Crux.wav",
-    "year": "2022–",
-    "type": "Unit",
-    "role": "Member",
-    "cover": "",
-    "description": "（団体の紹介文をここに記載してください）",
+    "id": "nxpc",
+    "title": "NxPC.Lab（新次元多層メディア的クラブ体験研究室）",
+    "year": "2026–",
+    "type": "Lab",
+    "role": "Web Manager, External Affairs Department",
+    "cover": "assets/img/organization/nxpclab.png",
+    "description": "IAMASの有志により運営される研究機関。\n音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施する。",
     "tags": [],
-    "links": []
+    "links": [
+      { "label": "Official Website", "url": "https://nxpclab.info/" }
+    ]
+  },
+  {
+    "id": "jssa",
+    "title": "先端芸術音楽創作学会 | JSSA",
+    "year": "2026–",
+    "type": "Academic Conference",
+    "role": "Student Member",
+    "cover": "assets/img/organization/jssa.jpg",
+    "description": "先端芸術音楽（コンピュータ音楽）の創作を対象とした研究に関する学会。\n関東を中心として、3ヶ月に1度程度の定例研究会、またレクチャーコンサートなどを開催する。",
+    "tags": [],
+    "links": [
+      { "label": "Official Website", "url": "https://jssa.info/" }
+    ]
+  },
+  {
+    "id": "pocomony",
+    "title": "POCOMONY",
+    "year": "2022–",
+    "type": "Sound Unit",
+    "role": "Founder",
+    "cover": "assets/img/organization/pocomony.jpg",
+    "description": "茨城高専発の音楽ユニット。\n音楽活動の他に、クラブイベント「booth:」の企画・運営を行う。",
+    "tags": [],
+    "links": [
+      { "label": "X (Twitter)", "url": "https://x.com/pocomony" }
+    ]
   },
   {
     "id": "hitchworks",
     "title": "Hitch Works",
     "year": "2025–",
-    "type": "Sound Art Unit",
-    "role": "Member",
-    "cover": "",
-    "description": "サウンドアート・演出を手がけるユニット。「Iceflare Nocturne」などの制作を行う。\n（紹介文を追記してください）",
-    "tags": ["Sound Art"],
+    "type": "Media Art Team",
+    "role": "Vice Chairman",
+    "cover": "assets/img/organization/hitchworks.png",
+    "description": "茨城高専公認の芸術集団。\n茨城高専内外でのイベント企画や運営、それに伴った作品制作を行う。",
+    "tags": [],
     "links": []
   },
   {
-    "id": "gsignpresto",
+    "id": "cruxwav",
+    "title": "Crux.wav",
+    "year": "2022–",
+    "type": "Band",
+    "role": "Dr.",
+    "status": "Indefinitely suspended",
+    "cover": "assets/img/organization/cruxwav.png",
+    "description": "茨城高専発のロックバンド。\n現在は無期限休止中。",
+    "tags": [],
+    "links": [
+      { "label": "X (Twitter)", "url": "https://x.com/CruxWav" }
+    ]
+  },
+  {
+    "id": "gsp",
     "title": "G sign presto",
     "year": "2024–2026",
-    "type": "Unit",
-    "role": "Member",
-    "status": "解散",
-    "cover": "",
-    "description": "（団体の紹介文をここに記載してください）2026年に解散。",
+    "type": "Band",
+    "role": "Dr.",
+    "status": "Disbanded",
+    "cover": "assets/img/organization/gsp.jpg",
+    "description": "福井大学発のインストバンド。\nジャズを主軸としたクロスオーバー的なオリジナル楽曲を演奏する。",
     "tags": [],
     "links": []
   }
