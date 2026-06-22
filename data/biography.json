@@ -12,14 +12,14 @@
   ],
   "facts": [
     { "label": "Name", "value": "Tusq（輔）" },
-    { "label": "Born", "value": "2003" },
+    { "label": "Born", "value": "2003.07.14" },
     { "label": "Role", "value": "Composer / Instrumentalist" },
     { "label": "Based", "value": "IAMAS — 情報科学芸術大学院大学" },
     { "label": "Field", "value": "現代音楽 / 知能システム工学 / 芸術工学" }
   ],
   "timeline": [
     { "year": "2003", "title": "茨城県ひたちなか市に生まれる。", "detail": "" },
-    { "year": "2008", "title": "RCC Drum School 入会", "detail": "ジャズドラムを板垣正美に師事" },
+    { "year": "2008", "title": "RCC Drum School 加入", "detail": "ジャズドラムを板垣正美に師事" },
     { "year": "2017", "title": "作編曲を独学で始める", "detail": "" },
     { "year": "2017", "title": "RCC Summer Camp 2017 参加", "detail": "受賞：Ensemble Award / Drum-Battle Finalist" },
     { "year": "2018", "title": "RCC Summer Camp 2018 参加 / 最年少グランプリ 獲得", "detail": "受賞：GrandPrix / Excellence Award / Ensemble Award" },
