@@ -66,11 +66,21 @@ function buildEmbed(embed) {
   return "";
 }
 
+/* statuses that mean "no longer active" → shown as a muted gray badge */
+const INACTIVE_STATUS = [
+  "done", "disbanded", "解散", "終了", "完了", "休止",
+  "indefinitely suspended", "suspended", "finished", "ended",
+];
+function isInactiveStatus(status = "") {
+  const s = status.toLowerCase();
+  return INACTIVE_STATUS.some((kw) => s.includes(kw));
+}
+
 /* ---- card ---- */
 function cardHTML(item, index) {
   const status =
     item.status && !["released", "公開"].includes(item.status.toLowerCase())
-      ? `<span class="card__status">${esc(item.status)}</span>`
+      ? `<span class="card__status${isInactiveStatus(item.status) ? " card__status--inactive" : ""}">${esc(item.status)}</span>`
       : "";
 
   const inner = item.cover
