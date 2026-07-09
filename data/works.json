@@ -3,32 +3,46 @@
     "id": "sound-ransho",
     "title": "1st EP「濫觴」",
     "year": "2024",
-    "type": "Sound / Composition",
+    "type": "EP / Composition",
     "cover": "assets/img/opus/ran_sho.png",
     "description": "Tusq名義初のオリジナルEP。\nDubstepをはじめとしたメインストリームジャンルに、独自のエッセンスを落とし込んだ。",
-    "tags": ["Composition", "Electro"],
+    "tags": [
+      "Drum'n Bass",
+      "Color Bass",
+      "Dubstep"
+    ],
     "embed": {
       "type": "soundcloud",
       "url": "https://soundcloud.com/ocha-no-taiko/sets/ran_sho?si=1cf18f8870d14e78a77a93c2b1e673b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/ran_sho?si=1cf18f8870d14e78a77a93c2b1e673b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
+      {
+        "label": "SoundCloud",
+        "url": "https://soundcloud.com/ocha-no-taiko/sets/ran_sho?si=1cf18f8870d14e78a77a93c2b1e673b2&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      }
     ]
   },
   {
     "id": "sound-ono",
     "title": "2nd EP「懊悩」",
     "year": "2025",
-    "type": "Sound / Composition",
+    "type": "EP / Composition",
     "cover": "assets/img/opus/o_no.png",
     "description": "1st EP「濫觴」の姉妹的EP。\nマスロックやシューゲイザーに影響を受けている。",
-    "tags": ["Composition", "Electro"],
+    "tags": [
+      "Color Bass",
+      "Bass House",
+      "Mid-Tempo"
+    ],
     "embed": {
       "type": "soundcloud",
       "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
+      {
+        "label": "SoundCloud",
+        "url": "https://soundcloud.com/ocha-no-taiko/sets/o_no?si=84a8bd3b93cd41e8ab896577794a1cee&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      }
     ]
   },
   {
@@ -37,62 +51,42 @@
     "year": "2026",
     "type": "EP / Composition",
     "cover": "assets/img/opus/snowed in delta.jpeg",
-    "description": "外伝的EP。\nエレクトロにオルタナティブロックやモダンジャズを融合させた新しいジャンル「ポスト・フュージョン」を開拓する。",
-    "tags": ["Composition", "Post Fusion"],
+    "description": "外伝的EP。\nエレクトロにオルタナティブロックやモダンジャズを融合させた新しい音楽ジャンルを開拓する。",
+    "tags": [
+      "Alternative Jazztroniqa"
+    ],
     "embed": {
       "type": "soundcloud",
       "url": "https://soundcloud.com/ocha-no-taiko/sets/snowed-in-delta?si=2b9f2be11b4943e19e51d0a7583bb857&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/snowed-in-delta?si=2b9f2be11b4943e19e51d0a7583bb857&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
+      {
+        "label": "SoundCloud",
+        "url": "https://soundcloud.com/ocha-no-taiko/sets/snowed-in-delta?si=2b9f2be11b4943e19e51d0a7583bb857&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      }
     ]
   },
   {
-    "id": "sound-hs",
-    "title": "Unfinished EP「Hyper Sonus」",
-    "year": "2026",
-    "type": "Sound / Composition",
-    "cover": "",
-    "description": "終わりのない実験的アルバム。\n音MADやインターネット・ミーム的な要素を融合させたHyper系サウンドを開拓する。",
-    "tags": ["Composition", "Hyper"],
+    "id": "meltqore",
+    "title": "Endless EP「meltqore」",
+    "year": "2026-",
+    "type": "EP / Composition",
+    "cover": "assets/img/opus/snowed in delta.jpeg",
+    "description": "Tusqの別名義兼、終わりのないEP。\n人生に疲れた先にあるのが死ではなく、微睡だったらいいな。",
+    "tags": [
+      "Hyperflip",
+      "Hyper Pop",
+      "Dreamcore"
+    ],
     "embed": {
       "type": "soundcloud",
-      "url": "https://soundcloud.com/ocha-no-taiko/sets/hyper-sonus?si=0a04cfccf74a44d0ade7819dec3597e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      "url": ""
     },
     "links": [
-      { "label": "SoundCloud", "url": "https://soundcloud.com/ocha-no-taiko/sets/hyper-sonus?si=0a04cfccf74a44d0ade7819dec3597e0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
-    ]
-  },
-  {
-    "id": "video-sa1",
-    "title": "Showcase_Archive_#1 [digest]",
-    "year": "2026",
-    "type": "Video / Archive",
-    "cover": "",
-    "description": "IAMAS入学前の活動を記録した映像。\n各楽曲のイントロ・ドロップをまとめた。",
-    "tags": ["Archive", "Electro"],
-    "embed": {
-      "type": "youtube",
-      "url": "https://youtu.be/_weH6RlaY3E?si=WHWM-T4tq5M-Hf7r"
-    },
-    "links": [
-      { "label": "YouTube", "url": "https://youtu.be/_weH6RlaY3E?si=WHWM-T4tq5M-Hf7r" }
-    ]
-  },
-  {
-    "id": "video-patoneko1",
-    "title": "パト猫が社畜大解放したときに脳内で流れている曲(フル)",
-    "year": "2024",
-    "type": "Video / MV",
-    "cover": "assets/img/opus/patoneko1.jpg",
-    "description": "猫元パト（パト猫）さんへのファンアート。\n2026年現在で最も再生された作品。(約7万回再生) ",
-    "tags": ["VTuber", "Remix"],
-    "embed": {
-      "type": "youtube",
-      "url":"https://www.youtube.com/watch?v=CJlOBsyjjEA"
-    },
-    "links": [
-      { "label": "YouTube", "url": "https://www.youtube.com/watch?v=CJlOBsyjjEA" }
+      {
+        "label": "SoundCloud",
+        "url": ""
+      }
     ]
   }
 ]

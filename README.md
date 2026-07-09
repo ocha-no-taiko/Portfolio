@@ -148,6 +148,11 @@ git push
 
 > JSON はカンマ抜け・閉じ括弧忘れなどがあると表示が崩れます。心配なときは https://jsonlint.com などで貼り付けチェックすると安心です。
 
+```bash
+cd "/Users/life_mac_12/Claude Code PJ/portfolio"
+./deploy.sh "作品を追加"
+```
+
 ## フォント・配色（テーマ）
 
 フォントと色は **`data/theme.json`** で一元管理します（CSS を触る必要はありません）。`assets/js/site.js` が読み込み、CSS変数として適用します。
