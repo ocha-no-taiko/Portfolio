@@ -10,9 +10,24 @@
     "description": "Vibe-Codingはもう古い、時代は†Vibe-Patching†。",
     "tags": [],
     "updates": [
-      { "date": "2026-XX", "label": "学校のイベントで展示", "status": "upcoming", "detail": "" },
-      { "date": "2026-XX", "label": "学会で発表", "status": "upcoming", "detail": "" },
-      { "date": "2026-XX", "label": "Ogaki Mini Maker Faire 出展", "status": "upcoming", "url": "" }
+      {
+        "date": "2026-07",
+        "label": "IAMAS OPENHOUSE 2026 出展",
+        "status": "upcoming",
+        "detail": ""
+      },
+      {
+        "date": "2026-12",
+        "label": "JSSA | 先端芸術音楽創作学会 第64回研究会　参加",
+        "status": "upcoming",
+        "detail": ""
+      },
+      {
+        "date": "2026-12",
+        "label": "Ogaki Mini Maker Faire 出展",
+        "status": "upcoming",
+        "url": ""
+      }
     ],
     "links": [
       {
@@ -31,6 +46,14 @@
     "cover": "assets/img/project/sf2026.jpg",
     "description": "IAMASで参加している研究プロジェクト。\nテクノロジーが作り出す魔術的リアリティを批判的に解体し、オルタナティブな未来の物語を具体的に構想・提示する。",
     "tags": [],
+    "updates": [
+      {
+        "date": "2026-07",
+        "label": "IAMAS OPENHOUSE 2026 出展",
+        "status": "upcoming",
+        "detail": ""
+      }
+    ],
     "links": [
       {
         "label": "Project",
@@ -48,6 +71,14 @@
     "cover": "assets/img/project/booth_minus1_flayer.jpeg",
     "description": "POCOMONYが企画・運営するクラブイベント。\nDJパフォーマンスを中心に、茨城県の音楽シーンを発展させることを目的とする。",
     "tags": [],
+    "updates": [
+      {
+        "date": "2025-11",
+        "label": "booth:-1 開催",
+        "status": "DONE",
+        "detail": ""
+      }
+    ],
     "links": [
       {
         "label": "X(Twitter)",
@@ -65,6 +96,14 @@
     "cover": "assets/img/project/nitic1.png",
     "description": "茨城高専と水戸生涯学習センターとの共同プロジェクト。\nHitch Worksとして、サウンドアート・演出監修を行った。",
     "tags": [],
+    "updates": [
+      {
+        "date": "2025-12",
+        "label": "Iceflare Nocturne 開催",
+        "status": "DONE",
+        "detail": ""
+      }
+    ],
     "links": [
       {
         "label": "Archive",
