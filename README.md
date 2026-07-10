@@ -92,8 +92,17 @@ portfolio/
 
 `data/projects.json` も形式は同じです。加えて以下が使えます。
 
-- `status`: `"Ongoing"` など。`"Released"` / `"公開"` 以外を入れるとカード左上にバッジ表示。
+- `status`: `"Ongoing"` など。`"Released"` / `"公開"` 以外を入れるとカード左上にバッジ表示。`"DONE"` / `"解散"` / `"Disbanded"` などを入れると、バッジが灰色（＝もう動いていない）になります。
 - `role`: 役割（例: "Concept / Development"）。
+- `updates`: 展示・発表・出展などの活動ログ／予定。`{date, label, status, detail, url}` の配列。**古い順・新しい順など好きな順で手動で並べてください**（自動並び替えはしません）。
+  - `status` が `"upcoming"` の項目はカードにも「次の予定」として1件だけ表示され、モーダルには全件が時系列リストで並びます（`upcoming` はアクセントカラーの「予定」バッジ、それ以外は灰色の「開催済み」バッジ）。
+  - 例：
+    ```json
+    "updates": [
+      { "date": "2026-08", "label": "○○祭で展示", "status": "upcoming", "detail": "", "url": "" },
+      { "date": "2026-03", "label": "△△学会で発表", "status": "done", "detail": "" }
+    ]
+    ```
 
 ## Organization（所属団体）を追加する
 

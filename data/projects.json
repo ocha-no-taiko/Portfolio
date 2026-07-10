@@ -9,6 +9,11 @@
     "cover": "assets/img/project/Vibe-Patching.png",
     "description": "Vibe-Codingはもう古い、時代は†Vibe-Patching†。",
     "tags": [],
+    "updates": [
+      { "date": "2026-XX", "label": "学校のイベントで展示", "status": "upcoming", "detail": "" },
+      { "date": "2026-XX", "label": "学会で発表", "status": "upcoming", "detail": "" },
+      { "date": "2026-XX", "label": "Ogaki Mini Maker Faire 出展", "status": "upcoming", "url": "" }
+    ],
     "links": [
       {
         "label": "Repository",

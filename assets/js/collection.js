@@ -76,6 +76,47 @@ function isInactiveStatus(status = "") {
   return INACTIVE_STATUS.some((kw) => s.includes(kw));
 }
 
+/* ---- updates (project activity log: upcoming exhibitions/talks/etc.) ---- */
+function isUpcomingUpdate(status = "") {
+  return status.trim().toLowerCase() === "upcoming";
+}
+
+function nextUpdateHTML(updates) {
+  if (!Array.isArray(updates)) return "";
+  const next = updates.find((u) => isUpcomingUpdate(u.status));
+  if (!next) return "";
+  return `
+    <div class="card__next">
+      <span class="card__next-dot"></span>
+      <span class="card__next-date">${esc(next.date || "")}</span>
+      <span>${esc(next.label || "")}</span>
+    </div>`;
+}
+
+function buildUpdatesTimeline(updates) {
+  if (!Array.isArray(updates) || !updates.length) return "";
+  const items = updates
+    .map((u) => {
+      const upcoming = isUpcomingUpdate(u.status);
+      const badge = `<span class="update-badge ${upcoming ? "update-badge--upcoming" : "update-badge--done"}">${upcoming ? "予定" : "開催済み"}</span>`;
+      const label = u.url
+        ? `<a href="${esc(u.url)}" target="_blank" rel="noopener noreferrer">${esc(u.label || "")}</a>`
+        : esc(u.label || "");
+      return `
+      <li class="timeline__item">
+        <span class="timeline__year">${esc(u.date || "")}</span>
+        <div>
+          <div class="timeline__title">${label}${badge}</div>
+          ${u.detail ? `<div class="timeline__detail">${esc(u.detail)}</div>` : ""}
+        </div>
+      </li>`;
+    })
+    .join("");
+  return `
+    <p class="section-head">Updates</p>
+    <ol class="timeline timeline--updates" style="margin-bottom:1.6em">${items}</ol>`;
+}
+
 /* ---- card ---- */
 function cardHTML(item, index) {
   const status =
@@ -97,6 +138,7 @@ function cardHTML(item, index) {
       ${item.year ? `<span class="card__year">${esc(item.year)}</span>` : ""}
     </div>
     ${item.type ? `<span class="card__meta">${esc(item.type)}</span>` : ""}
+    ${nextUpdateHTML(item.updates)}
   </button>`;
 }
 
@@ -124,12 +166,14 @@ function openModal(item) {
       : "";
 
   const metaBits = [item.year, item.type, item.role, item.status].filter(Boolean).map(esc).join(" · ");
+  const updates = buildUpdatesTimeline(item.updates);
 
   panel.innerHTML = `
     <h2 class="modal__title">${esc(item.title || "Untitled")}</h2>
     ${metaBits ? `<p class="modal__meta">${metaBits}</p>` : ""}
     ${embed || cover}
     ${item.description ? `<div class="modal__desc">${esc(item.description).replace(/\n/g, "<br>")}</div>` : ""}
+    ${updates}
     ${tags}
     ${links}
   `;
