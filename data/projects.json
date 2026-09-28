@@ -1,5 +1,36 @@
 [
   {
+    "id": "grobyc",
+    "title": "逆サイボーグ",
+    "year": "2026–",
+    "type": "Development / Research",
+    "status": "Ongoing",
+    "role": "Founder",
+    "cover": "assets/img/project/grobyc.png",
+    "description": "精神がAI・身体が生物の存在は、どのように定義できるだろうか",
+    "tags": [],
+    "updates": [
+      {
+        "date": "2026-10",
+        "label": "茨城高専キャリア教育セミナー 講演",
+        "status": "upcoming",
+        "detail": ""
+      },
+      {
+        "date": "2026-07",
+        "label": "gaki Mini Maker Faire 講演",
+        "status": "upcoming",
+        "detail": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/ocha-no-taiko/grobyc"
+      }
+    ]
+  },
+  {
     "id": "vp",
     "title": "†Vibe-Patching†",
     "year": "2026–",
@@ -13,7 +44,7 @@
       {
         "date": "2026-07",
         "label": "IAMAS OPENHOUSE 2026 出展",
-        "status": "upcoming",
+        "status": "DONE",
         "detail": ""
       },
       {
@@ -50,7 +81,7 @@
       {
         "date": "2026-07",
         "label": "IAMAS OPENHOUSE 2026 出展",
-        "status": "upcoming",
+        "status": "DONE",
         "detail": ""
       }
     ],
@@ -88,7 +119,7 @@
   },
   {
     "id": "nitic1",
-    "title": "Iceflare Nocturne",
+    "title": "Hitch Works",
     "year": "2025",
     "type": "IGA",
     "status": "DONE",

@@ -9,7 +9,10 @@
     "description": "岐阜県立の大学院大学。\n全国でも数少ない「メディア表現」を研究している。",
     "tags": [],
     "links": [
-      { "label": "Official Website", "url": "https://www.iamas.ac.jp/" }
+      {
+        "label": "Official Website",
+        "url": "https://www.iamas.ac.jp/"
+      }
     ]
   },
   {
@@ -17,12 +20,15 @@
     "title": "NxPC.Lab（新次元多層メディア的クラブ体験研究室）",
     "year": "2026–",
     "type": "Lab",
-    "role": "Web Manager, External Affairs Department",
+    "role": "Web Manager",
     "cover": "assets/img/organization/nxpclab.png",
     "description": "IAMASの有志により運営される研究機関。\n音楽体験を拡張し、音楽空間におけるコミュニケーションを次のステージへ導くための研究開発、イベントを実施する。",
     "tags": [],
     "links": [
-      { "label": "Official Website", "url": "https://nxpclab.info/" }
+      {
+        "label": "Official Website",
+        "url": "https://nxpclab.info/"
+      }
     ]
   },
   {
@@ -35,7 +41,10 @@
     "description": "先端芸術音楽（コンピュータ音楽）の創作を対象とした研究に関する学会。\n関東を中心として、3ヶ月に1度程度の定例研究会、またレクチャーコンサートなどを開催する。",
     "tags": [],
     "links": [
-      { "label": "Official Website", "url": "https://jssa.info/" }
+      {
+        "label": "Official Website",
+        "url": "https://jssa.info/"
+      }
     ]
   },
   {
@@ -48,7 +57,10 @@
     "description": "茨城高専発の音楽ユニット。\n音楽活動の他に、クラブイベント「booth:」の企画・運営を行う。",
     "tags": [],
     "links": [
-      { "label": "X (Twitter)", "url": "https://x.com/pocomony" }
+      {
+        "label": "X (Twitter)",
+        "url": "https://x.com/pocomony"
+      }
     ]
   },
   {
@@ -73,7 +85,10 @@
     "description": "茨城高専発のロックバンド。\n現在は無期限休止中。",
     "tags": [],
     "links": [
-      { "label": "X (Twitter)", "url": "https://x.com/CruxWav" }
+      {
+        "label": "X (Twitter)",
+        "url": "https://x.com/CruxWav"
+      }
     ]
   },
   {
