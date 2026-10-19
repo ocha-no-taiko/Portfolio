@@ -11,15 +11,40 @@
     "tags": [],
     "updates": [
       {
-        "date": "2026-10",
+        "date": "2026-12",
         "label": "茨城高専キャリア教育セミナー 講演",
         "status": "upcoming",
         "detail": ""
       },
       {
-        "date": "2026-07",
+        "date": "2026-12",
         "label": "gaki Mini Maker Faire 講演",
         "status": "upcoming",
+        "detail": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/ocha-no-taiko/grobyc"
+      }
+    ]
+  },
+  {
+    "id": "riminaru",
+    "title": "団地のリミナリティ",
+    "year": "2026–",
+    "type": "Fieldwork / Research",
+    "status": "Ongoing",
+    "role": "Founder",
+    "cover": "assets/img/project/grobyc.png",
+    "description": "日本の団地におけるリミナリティはどのように形成されるのか",
+    "tags": [],
+    "updates": [
+      {
+        "date": "2026-10",
+        "label": "第一回フィールドワーク　＠茨城県営ひたちなかアパート",
+        "status": "DONE",
         "detail": ""
       }
     ],
@@ -48,9 +73,9 @@
         "detail": ""
       },
       {
-        "date": "2026-12",
+        "date": "2026-10",
         "label": "JSSA | 先端芸術音楽創作学会 第64回研究会　参加",
-        "status": "upcoming",
+        "status": "DONE",
         "detail": ""
       },
       {
