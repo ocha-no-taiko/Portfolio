@@ -50,8 +50,8 @@
     ],
     "links": [
       {
-        "label": "Repository",
-        "url": "https://github.com/ocha-no-taiko/grobyc"
+        "label": "",
+        "url": ""
       }
     ]
   },
@@ -74,13 +74,50 @@
       },
       {
         "date": "2026-10",
-        "label": "JSSA | 先端芸術音楽創作学会 第64回研究会　参加",
+        "label": "JSSA | 先端芸術音楽創作学会 第64回研究会 参加",
         "status": "DONE",
         "detail": ""
       },
       {
         "date": "2026-12",
         "label": "Ogaki Mini Maker Faire 出展",
+        "status": "upcoming",
+        "url": ""
+      }
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/ocha-no-taiko/Vibe-Patching"
+      }
+    ]
+  },
+  {
+    "id": "iq",
+    "title": "IAMAS QUEST",
+    "year": "2026–",
+    "type": "Development / Research",
+    "status": "Ongoing",
+    "role": "Founder",
+    "cover": "assets/img/project/iq.png",
+    "description": "Quest to Play",
+    "tags": [],
+    "updates": [
+      {
+        "date": "2026-10",
+        "label": "ゲームクリエイター甲子園2026 出場",
+        "status": "Ongoing",
+        "detail": ""
+      },
+      {
+        "date": "2027-02",
+        "label": "IAMAS2027 参加",
+        "status": "upcoming",
+        "detail": ""
+      },
+      {
+        "date": "2027-07",
+        "label": "IAMAS OPENHOUSE 2027 出展",
         "status": "upcoming",
         "url": ""
       }
@@ -106,6 +143,12 @@
       {
         "date": "2026-07",
         "label": "IAMAS OPENHOUSE 2026 出展",
+        "status": "DONE",
+        "detail": ""
+      },
+      {
+        "date": "2026-10",
+        "label": "シンポジウム「不可知なものに向かって──科学の場と芸術実践」",
         "status": "DONE",
         "detail": ""
       }
